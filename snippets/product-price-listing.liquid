@@ -55,7 +55,7 @@
     <dd>
       <span class="price-item price-item--regular">
         {%- if product.price_varies -%}
-          {{ 'products.product.from_lowest_price' | t: lowest_price: money_price }}
+          {{ 'products.product.from_lowest_price_html' | t: lowest_price: money_price }}
         {%- else -%}
           {{ money_price }}
         {%- endif -%}
@@ -69,7 +69,7 @@
     <dd>
       <span class="price-item price-item--sale">
         {%- if product.price_varies -%}
-          {{ 'products.product.from_lowest_price' | t: lowest_price: money_price }}
+          {{ 'products.product.from_lowest_price_html' | t: lowest_price: money_price }}
         {%- else -%}
           {{ money_price }}
         {%- endif -%}
